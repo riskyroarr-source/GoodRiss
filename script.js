@@ -1,9 +1,29 @@
-// Dapatkan tombol CTA berdasarkan ID
-const ctaButton = document.getElementById('cta-button');
+// Dapatkan elemen tombol CTA
+const infoButton = document.getElementById('infoButton');
 
-// Tambahkan event listener (pendengar kejadian)
-ctaButton.addEventListener('click', function() {
-    // Tampilkan pesan saat tombol diklik
-    alert('Terima kasih! Anda mengklik tombol "Mulai Sekarang". Kami akan segera menghubungi Anda.');
-    // Anda bisa menambahkan fungsi lain di sini, seperti mengirim data form
+// Dapatkan elemen paragraf untuk pesan
+const infoPesan = document.getElementById('infoPesan');
+
+// Tambahkan Event Listener (pendengar kejadian)
+infoButton.addEventListener('click', function() {
+    // 1. Tampilkan pesan alert
+    alert('Anda akan diarahkan ke bagian "Data Singkat Sekolah" di bawah!');
+
+    // 2. Tambahkan pesan dinamis di bagian kontak
+    infoPesan.textContent = 'Terima kasih telah menunjukkan minat pada data SMAN 1 Dawarblandong.';
+    infoPesan.style.color = '#ffd700'; // Ubah warna teks
+
+    // 3. Gulir (scroll) ke bagian data
+    document.getElementById('data').scrollIntoView({ behavior: 'smooth' });
+});
+
+// Contoh interaksi lain: mengubah warna navbar saat gulir
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    // Jika posisi gulir lebih dari 50px, tambahkan kelas 'scrolled'
+    if (window.scrollY > 50) {
+        navbar.style.backgroundColor = '#0056b3'; /* Warna lebih gelap saat scroll */
+    } else {
+        navbar.style.backgroundColor = '#007bff'; /* Warna asli */
+    }
 });
