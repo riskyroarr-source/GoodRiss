@@ -3,44 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Sederhana</title>
+    <title>Profil SMAN 1 Dawarblandong</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="hero-section">
+    <nav class="navbar">
         <div class="container">
-            <h1>Selamat Datang di Website Kami!</h1>
-            <p>Solusi Terbaik untuk Kebutuhan Digital Anda.</p>
-            <button id="cta-button">Mulai Sekarang</button>
+            <h1 class="logo">SMANDAWAR</h1>
+            <ul class="nav-links">
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#data">Data</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="profil">
+        <div class="hero-overlay">
+            <div class="container">
+                <h2>Selamat Datang di</h2>
+                <h1>SMAN 1 DAWARBLANDONG</h1>
+                <p>Mencetak Generasi Berprestasi, Berkarakter, dan Berbudaya.</p>
+                <button id="infoButton" class="cta-button">Lihat Data Lengkap</button>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section class="features-section">
-            <div class="container">
-                <h2>Mengapa Memilih Kami?</h2>
-                <div class="feature-list">
-                    <div class="feature-item">
-                        <h3>Desain Keren</h3>
-                        <p>Tampilan yang modern dan responsif.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>Cepat & Handal</h3>
-                        <p>Performa tinggi tanpa *loading* yang lama.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>Dukungan Penuh</h3>
-                        <p>Kami siap membantu Anda kapan saja.</p>
-                    </div>
+    <section class="data-sekolah" id="data">
+        <div class="container">
+            <h2>Data Singkat Sekolah</h2>
+            <div class="data-grid">
+                <div class="data-item">
+                    <h3>Nama Sekolah</h3>
+                    <p>SMAN 1 DAWARBLANDONG</p>
+                </div>
+                <div class="data-item">
+                    <h3>NPSN</h3>
+                    <p>20502720</p>
+                </div>
+                <div class="data-item">
+                    <h3>Status</h3>
+                    <p>Negeri</p>
+                </div>
+                <div class="data-item">
+                    <h3>Akreditasi</h3>
+                    <p>A (Tahun 2021)</p>
+                </div>
+                <div class="data-item">
+                    <h3>Alamat</h3>
+                    <p>JL. JON DJAROT SUBIANTORO, Dawarblandong, Kab. Mojokerto, Jawa Timur.</p>
+                </div>
+                <div class="data-item">
+                    <h3>Kepala Sekolah</h3>
+                    <p>EDY SUCAHYONO, S.Psi, S.Pd, M.A.P.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section class="kontak" id="kontak">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <p>Telepon: 085881007002</p>
+            <p>Email: sman1dawarblandong@gmail.com</p>
+            <p id="infoPesan"></p>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Landing Page Sederhana. Hak Cipta Dilindungi.</p>
+            <p>&copy; 2025 SMAN 1 Dawarblandong Biodata Prom. Dibuat dengan HTML, CSS, JS.</p>
         </div>
     </footer>
 
